@@ -64,7 +64,7 @@
             
             snake.unshift(newHead);
         }
-        
+        // 优化后的碰撞检测。
         function collision(head, array) {
             for (let i = 0; i < array.length; i++) {
                 if (head.x === array[i].x && head.y === array[i].y) return true;
@@ -72,7 +72,7 @@
             return false;
         }
         
-        const game = setInterval(draw, 150);
+        const game = setInterval(draw, 130);
     </script>
 </body>
 </html>
